@@ -1,0 +1,13 @@
+.ControllerButton {
+  color: aliceblue;
+  background-color: black;
+
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: aliceblue;
+  }
+}
