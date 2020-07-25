@@ -3,6 +3,7 @@ import './data.scss';
 
 import Button from 'src/util-components/button';
 import NumberInput from 'src/util-components/number-input';
+import RangeInput from 'src/util-components/range-input';
 
 type Props = {
 
@@ -11,7 +12,11 @@ type Props = {
 function Data(props: Props) {
     return (
         <div className="Data" style={ style.DataRoot }>
-            <div style={ style.child }><Button text={'Start'} cb={() => {}}/></div>
+            <div style={ style.child }>
+                <Button text={'Start'} cb={() => {
+                    console.log('Start was clicked')
+                }}/>
+            </div>
             <div style={ style.child }>
                 <NumberInput
                     min={1} max={10}
@@ -20,7 +25,15 @@ function Data(props: Props) {
                     onChange={(n) => console.log('Number changed to', n)}
                 />
             </div>
-            <div style={ style.child }>Child</div>
+            <div style={ style.child }>
+                <RangeInput
+                    min={0} max={2 * Math.PI} step={0.01} currentValue={0.45}
+                    title={'Range Input'} note={'I am a note'}
+                    onChange={(value) => {
+                        console.log('Value changed to', value)
+                    }}
+                />
+            </div>
             <div style={ style.child }>Child</div>
             <div style={ style.child }>Child</div>
             <div style={ style.child }>Child</div>
