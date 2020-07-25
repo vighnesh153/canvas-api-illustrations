@@ -4,6 +4,7 @@ import './data.scss';
 import Button from 'src/util-components/button';
 import NumberInput from 'src/util-components/number-input';
 import RangeInput from 'src/util-components/range-input';
+import SelectFromDropDown from 'src/util-components/select-from-drop-down';
 
 type Props = {
 
@@ -34,7 +35,20 @@ function Data(props: Props) {
                     }}
                 />
             </div>
-            <div style={ style.child }>Child</div>
+            <div style={ style.child }>
+                <SelectFromDropDown
+                    title={ 'Some Title' } currentValue={ 'val2' }
+                    options={ [
+                        { displayText: 'Value 1', returnValue: 'val1' },
+                        { displayText: 'Value 2', returnValue: 'val2' },
+                        { displayText: 'Value 3', returnValue: 'val3' },
+                        { displayText: 'Value 4', returnValue: 'val4' },
+                    ] }
+                    onChange={(value => {
+                        console.log('Value changed to', value)
+                    })}
+                />
+            </div>
             <div style={ style.child }>Child</div>
             <div style={ style.child }>Child</div>
         </div>
