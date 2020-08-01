@@ -1,6 +1,7 @@
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import ProjectView from './project-view';
+
+import CanvasContainer from './canvas-container';
 
 import { APP_STATE } from 'src/redux-impl/store';
 
@@ -12,4 +13,4 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
     return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProjectView);
+export default connect(mapStateToProps, mapDispatchToProps)(CanvasContainer);
