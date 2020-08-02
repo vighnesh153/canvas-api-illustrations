@@ -9,26 +9,26 @@ type PropsType = {
 };
 
 function Component(props: PropsType) {
-  let isAnimating: boolean;
+  let isAnimating = React.useRef<boolean>();
 
   const animator = (program: FernController) => {
     for (let i = 0; i < 50; i++) {
       program.plot();
       program.update();
     }
-    if (isAnimating) {
+    if (isAnimating.current) {
       requestAnimationFrame(() => animator(program));
     }
   };
 
   const animationStart = () => {
-    if (isAnimating) {
+    if (isAnimating.current) {
       return;
     }
     const program = new FernController(
       props.canvasRef.current as HTMLCanvasElement
     );
-    isAnimating = true;
+    isAnimating.current = true;
     animator(program);
   };
 
@@ -45,7 +45,7 @@ function Component(props: PropsType) {
   useEffect(() => {
     props.setDataAttributes(dataAttributes);
     return () => {
-      isAnimating = false;
+      isAnimating.current = false;
     };
   }, []);
 
