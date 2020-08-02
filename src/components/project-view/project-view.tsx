@@ -31,7 +31,7 @@ const style = {
     width: "90%",
     minWidth: "900px",
     margin: "10px auto",
-    border: "1px solid red",
+    // border: "1px solid red",
   },
   title: {
     marginBottom: "10px",
