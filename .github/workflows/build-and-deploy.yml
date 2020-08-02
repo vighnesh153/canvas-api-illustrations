@@ -31,7 +31,7 @@ jobs:
         run: npm run build
 
       - name: 404 redirect file
-        run: cp build/canvas-api-illustrations/index.html build/canvas-api-illustrations/404.html
+        run: cp build/index.html build/404.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
