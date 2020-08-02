@@ -9,6 +9,8 @@ type PropsType = {
 };
 
 function Component(props: PropsType) {
+  const { canvasRef, setDataAttributes } = props;
+
   let isAnimating = React.useRef<boolean>();
 
   const animator = (program: FernController) => {
@@ -25,9 +27,7 @@ function Component(props: PropsType) {
     if (isAnimating.current) {
       return;
     }
-    const program = new FernController(
-      props.canvasRef.current as HTMLCanvasElement
-    );
+    const program = new FernController(canvasRef.current as HTMLCanvasElement);
     isAnimating.current = true;
     animator(program);
   };
@@ -43,11 +43,11 @@ function Component(props: PropsType) {
     ],
   };
   useEffect(() => {
-    props.setDataAttributes(dataAttributes);
+    setDataAttributes(dataAttributes);
     return () => {
       isAnimating.current = false;
     };
-  }, []);
+  }, [setDataAttributes, dataAttributes]);
 
   return <></>;
 }
