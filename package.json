@@ -2,6 +2,7 @@
   "name": "canvas-api-illustrations",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vighnesh153.github.io/canvas-api-illustrations",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
