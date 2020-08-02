@@ -7,6 +7,8 @@ type PropsType = {
 };
 
 function Component(props: PropsType) {
+  const { canvasRef, setDataAttributes } = props;
+
   return <></>;
 }
 
