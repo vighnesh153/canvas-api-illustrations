@@ -1,6 +1,6 @@
 import React from "react";
 import DataAttributes from "src/models/data-attributes";
-import { BrickBreakerController } from "src/illustrations/brick-breaker/controller";
+import { FlappyBlockGameController } from "./controller";
 
 type PropsType = {
   canvasRef: React.RefObject<HTMLCanvasElement>;
@@ -9,19 +9,15 @@ type PropsType = {
 
 function Component(props: PropsType) {
   const canvasEl = props.canvasRef.current as HTMLCanvasElement;
-  const component = new BrickBreakerController(canvasEl);
+  const gameController = new FlappyBlockGameController(canvasEl);
   canvasEl.focus();
   canvasEl.tabIndex = 1;
-  component.start();
+  gameController.start();
 
   canvasEl.addEventListener("keyup", (event) => {
-    if (event.key === "Enter") {
-      component.onEnterPress();
+    if (event.code === "Space") {
+      gameController.onSpacePress();
     }
-  });
-
-  canvasEl.addEventListener("mousemove", (event: MouseEvent) => {
-    component.onHover(event);
   });
 
   return <></>;
