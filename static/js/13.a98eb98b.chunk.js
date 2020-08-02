@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[13,35],{16:function(t,a,n){"use strict";n.r(a);var e=n(1),s=n(22),u=n(49);a.default=Object(e.b)(null,(function(t){return{setDataAttributes:function(a){return t(Object(s.a)(a))}}}))(u.default)},49:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n.n(e);a.default=function(t){return t.canvasRef,t.setDataAttributes,s.a.createElement(s.a.Fragment,null)}}}]);
+//# sourceMappingURL=13.a98eb98b.chunk.js.map

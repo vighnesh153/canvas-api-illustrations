@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[39],{54:function(i){i.exports=JSON.parse('{"imageLink":"https://i.imgur.com/C0N3twn.png","title":"Brick Breaker Game","infoText":"","order":9}')}}]);
+//# sourceMappingURL=39.9f25a491.chunk.js.map

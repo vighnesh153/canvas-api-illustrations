@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[45],{60:function(s){s.exports=JSON.parse('{"imageLink":"https://i.imgur.com/spwnsPX.png","title":"Snake Game","infoText":"","order":7}')}}]);
+//# sourceMappingURL=45.92413d68.chunk.js.map

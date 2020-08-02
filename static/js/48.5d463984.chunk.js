@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[48],{63:function(i){i.exports=JSON.parse('{"imageLink":"","title":"TITLE","infoText":"","order":0}')}}]);
+//# sourceMappingURL=48.5d463984.chunk.js.map

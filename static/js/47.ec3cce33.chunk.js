@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[47],{62:function(e){e.exports=JSON.parse('{"imageLink":"https://i.imgur.com/tzA2Pyf.png","title":"Symmetric Binary Tree","infoText":"Modify the values above to change the shape of the tree.","order":1}')}}]);
+//# sourceMappingURL=47.ec3cce33.chunk.js.map

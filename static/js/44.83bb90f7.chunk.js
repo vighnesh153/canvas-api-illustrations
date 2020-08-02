@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[44],{59:function(i){i.exports=JSON.parse('{"imageLink":"https://i.imgur.com/J2zUHcl.png","title":"Sierpinski\'s Triangle","infoText":"Click the start button above to generate Sierpinski\'s triangle with Chaos","order":0}')}}]);
+//# sourceMappingURL=44.83bb90f7.chunk.js.map

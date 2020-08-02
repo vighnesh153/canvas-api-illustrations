@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[35],{49:function(a,t,n){"use strict";n.r(t);var s=n(0),e=n.n(s);t.default=function(a){return a.canvasRef,a.setDataAttributes,e.a.createElement(e.a.Fragment,null)}}}]);
+//# sourceMappingURL=35.cfa1336f.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpcanvas-api-illustrations"]=this["webpackJsonpcanvas-api-illustrations"]||[]).push([[41],{56:function(i){i.exports=JSON.parse('{"imageLink":"https://i.imgur.com/j0JsNwY.png","title":"Grid Path Finder","infoText":"Play around with the buttons.","order":0}')}}]);
+//# sourceMappingURL=41.358e7ec8.chunk.js.map
