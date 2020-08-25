@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, {Suspense} from "react";
 import "./canvas.scss";
 
 type Props = {
@@ -15,14 +15,14 @@ function CanvasContainer(props: Props) {
 
   return (
     <div className="canvas" style={style.CanvasRoot}>
-      <div className="Canvas__info" style={style.info}>
-        {props.infoText}
-      </div>
-      <canvas height="300" width="500" style={style.canvasEl} ref={canvasRef}>
-        Sorry. Your browser doesn't support canvas element.
-      </canvas>
-      <Suspense fallback={<div>Loading...</div>}>
-        <CanvasManipulator canvasRef={canvasRef} />
+      <Suspense fallback={<h2 style={{textAlign: 'center'}}>Loading...</h2>}>
+        <div className="Canvas__info" style={style.info}>
+          {props.infoText}
+        </div>
+        <canvas height="300" width="500" style={style.canvasEl} ref={canvasRef}>
+          Sorry. Your browser doesn't support canvas element.
+        </canvas>
+        <CanvasManipulator canvasRef={canvasRef}/>
       </Suspense>
     </div>
   );
