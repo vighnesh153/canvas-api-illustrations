@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "336e5b791d7f01460a14964c303bccb4",
+    "revision": "2c3bea1d4b52042c6cec3e4cd85c62f2",
     "url": "/canvas-api-illustrations/index.html"
   },
   {
@@ -44,16 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canvas-api-illustrations/static/js/16.8b0d0260.chunk.js"
   },
   {
-    "revision": "68eda4b41f613767a2db",
-    "url": "/canvas-api-illustrations/static/js/17.8c89514d.chunk.js"
+    "revision": "832737de94e1328b3bf6",
+    "url": "/canvas-api-illustrations/static/js/17.977cc50f.chunk.js"
   },
   {
-    "revision": "f965a148543e35036b65",
-    "url": "/canvas-api-illustrations/static/js/18.8403d007.chunk.js"
+    "revision": "02dae24ac704e2ca7059",
+    "url": "/canvas-api-illustrations/static/js/18.38129419.chunk.js"
   },
   {
-    "revision": "63d103b6b49980811be6",
-    "url": "/canvas-api-illustrations/static/js/19.f7a7f6f2.chunk.js"
+    "revision": "9342b5221cd909eb1d32",
+    "url": "/canvas-api-illustrations/static/js/19.ac17bac2.chunk.js"
   },
   {
     "revision": "20bdaee2e33825e1b803",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canvas-api-illustrations/static/js/21.0825b220.chunk.js"
   },
   {
-    "revision": "9e379919c21c024226ca",
-    "url": "/canvas-api-illustrations/static/js/22.a7f226b7.chunk.js"
+    "revision": "4c104392718faea96c36",
+    "url": "/canvas-api-illustrations/static/js/22.e1cdca45.chunk.js"
   },
   {
     "revision": "39b7f587d139f42c4407",
@@ -144,8 +144,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canvas-api-illustrations/static/js/39.9f25a491.chunk.js"
   },
   {
-    "revision": "c5d7f3ac28e352cfb7d6",
-    "url": "/canvas-api-illustrations/static/js/4.77999d5b.chunk.js"
+    "revision": "a7614733bb5a0e78607a",
+    "url": "/canvas-api-illustrations/static/js/4.37edd228.chunk.js"
   },
   {
     "revision": "bf8bbe95929b4dcf9a73",
@@ -188,8 +188,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canvas-api-illustrations/static/js/49.3c064cb3.chunk.js"
   },
   {
-    "revision": "e36054eae6e85943b426",
-    "url": "/canvas-api-illustrations/static/js/5.7731d230.chunk.js"
+    "revision": "f012b970ef77e6ebbd3a",
+    "url": "/canvas-api-illustrations/static/js/5.e2bf0742.chunk.js"
   },
   {
     "revision": "2a99180adb1275655087",
@@ -204,8 +204,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canvas-api-illustrations/static/js/53.cf2435fd.chunk.js"
   },
   {
-    "revision": "45ec43f3c25eac9623be",
-    "url": "/canvas-api-illustrations/static/js/6.acc74b5e.chunk.js"
+    "revision": "53833734783f855f9b2a",
+    "url": "/canvas-api-illustrations/static/js/6.d2bf6e0c.chunk.js"
   },
   {
     "revision": "ab5be9a13671c71acf55",
@@ -216,15 +216,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/canvas-api-illustrations/static/js/8.13631f63.chunk.js"
   },
   {
-    "revision": "4829e5baf49ad5c05978",
-    "url": "/canvas-api-illustrations/static/js/9.f2f12901.chunk.js"
+    "revision": "6709e2f36db603f0a6be",
+    "url": "/canvas-api-illustrations/static/js/9.683a6ca5.chunk.js"
   },
   {
     "revision": "6f2522114de16d3bb521",
     "url": "/canvas-api-illustrations/static/js/main.5a6492b3.chunk.js"
   },
   {
-    "revision": "7acad861d52ce30ee0aa",
-    "url": "/canvas-api-illustrations/static/js/runtime-main.bb817279.js"
+    "revision": "8a3dd1eff8b9c174615a",
+    "url": "/canvas-api-illustrations/static/js/runtime-main.c1aba7c5.js"
   }
 ]);
