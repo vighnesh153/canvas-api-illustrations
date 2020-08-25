@@ -8,6 +8,9 @@ type PropsType = {
 };
 
 function Component(props: PropsType) {
+  // remove all the attributes from other non-game components
+  props.setDataAttributes({});
+
   const canvasEl = props.canvasRef.current as HTMLCanvasElement;
   const component = new PongGameController(canvasEl);
   canvasEl.focus();
