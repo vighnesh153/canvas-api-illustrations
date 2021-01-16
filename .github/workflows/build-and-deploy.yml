@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy to AWS
 
 on:
   push:
@@ -7,36 +7,26 @@ on:
 
 jobs:
   build-and-deploy:
-
     runs-on: ubuntu-latest
     steps:
+      - name: Checking out code
+        uses: actions/checkout@v1
 
-      - name: Install SSH Client
-        uses: webfactory/ssh-agent@v0.2.0
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
 
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Setup Node
-        uses: actions/setup-node@master
-        with:
-          node-version: '14.x'
-
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build for production
+      - name: Build
         run: npm run build
 
-      - name: 404 redirect file
-        run: cp build/index.html build/404.html
+      - name: Deploy static site to S3 bucket
+        run: aws s3 sync ./build/ s3://graphics.vighnesh153.com --delete --cache-control 'public, max-age=300, s-maxage=31536000'
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          SSH: true
-          BRANCH: gh-pages
-          FOLDER: build
-          CLEAN: true
+      - name: Cloudfront invalidate
+        run: aws cloudfront create-invalidation --paths '/*' --distribution-id E2URL0IN7HDL33
