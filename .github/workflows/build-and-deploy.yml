@@ -30,4 +30,4 @@ jobs:
         run: aws s3 sync ./build/ s3://graphics.vighnesh153.com --delete --cache-control 'public, max-age=300, s-maxage=31536000'
 
       - name: Cloudfront invalidate
-        run: aws cloudfront create-invalidation --paths '/*' --distribution-id E2URL0IN7HDL33
+        run: aws cloudfront create-invalidation --paths '/*' --distribution-id E3OW54OSE0Q6RU

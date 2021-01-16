@@ -2,24 +2,23 @@
   "name": "canvas-api-illustrations",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vighnesh153.github.io/canvas-api-illustrations",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.53",
-    "@types/react": "^16.9.43",
-    "@types/react-dom": "^16.9.8",
+    "@types/node": "^12.19.14",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
-    "react-scripts": "3.4.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.2",
+    "react-scripts": "^4.0.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
-    "typescript": "^3.7.5"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,7 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-redux": "^7.1.9",
+    "@types/react-redux": "^7.1.15",
     "@types/redux-logger": "^3.0.8"
   }
 }
