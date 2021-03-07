@@ -4,6 +4,8 @@ export default class Controller {
   private readonly canvas: Canvas;
   private interval = setTimeout(() => {}, 0);
 
+  private readonly BG_COLOR = "black";
+
   constructor(e: HTMLCanvasElement) {
     this.canvas = new Canvas(e);
   }
@@ -18,6 +20,11 @@ export default class Controller {
   }
 
   draw(): void {
+    this.drawBg();
+  }
 
+  drawBg(): void {
+    const {canvas, BG_COLOR} = this;
+    canvas.drawFilledRect(0, 0, canvas.width, canvas.height, BG_COLOR);
   }
 }
