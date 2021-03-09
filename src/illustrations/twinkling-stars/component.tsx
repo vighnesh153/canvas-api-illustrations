@@ -12,6 +12,8 @@ function Component(props: PropsType) {
   const { canvasRef, setDataAttributes } = props;
 
   useEffect(() => {
+    setDataAttributes({});
+
     const canvasEl = props.canvasRef.current as HTMLCanvasElement;
     const gameController = new Controller(canvasEl);
     canvasEl.focus();
