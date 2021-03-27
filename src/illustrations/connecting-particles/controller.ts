@@ -73,6 +73,10 @@ class Particle {
     const {width, height} = canvas;
     return x < 0 || x > width || y < 0 || y > height;
   }
+
+  toString() {
+    return `${this.x}, ${this.y}`;
+  }
 }
 
 export class ParticlesController {
@@ -89,6 +93,7 @@ export class ParticlesController {
 
   private readonly particles = new Set<Particle>();
   private readonly PARTICLES_IN_VIEW = 100;
+  private readonly MAX_CONNECTIONS = 7;
 
   private mouseX: number = 100000;
   private mouseY: number = 100000;
@@ -134,18 +139,52 @@ export class ParticlesController {
     const particles = Array.from(this.particles);
     const {lineColor, lineWidth} = this;
     const {r, g, b} = lineColor;
+
+    const lines: {[k: string]: any} = {};
+
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const p1 = particles[i];
         const p2 = particles[j];
+
+        lines[p1.toString()] = lines[p1.toString()] || [];
+        lines[p2.toString()] = lines[p2.toString()] || [];
 
         const distance = euclideanDistance(p1.X, p1.Y, p2.X, p2.Y);
         const opacity = 10 / distance
 
         if (opacity > 0.1) {
           const color = `rgba(${r}, ${g}, ${b}, ${opacity})`;
-          this.canvas.drawLine(p1.X, p1.Y, p2.X, p2.Y, lineWidth, color);
+          // this.canvas.drawLine(p1.X, p1.Y, p2.X, p2.Y, lineWidth, color);
+          lines[p1.toString()].push({
+            x1: p1.X,
+            y1: p1.Y,
+            x2: p2.X,
+            y2: p2.Y,
+            color,
+            distance,
+            drawn: false,
+          });
         }
+      }
+    }
+
+    for (let pointConnectors of Object.values(lines)) {
+      pointConnectors = pointConnectors.sort((pC1: any, pC2: any) => {
+        return pC1.distance - pC2.distance;
+      });
+
+      while (pointConnectors.length > this.MAX_CONNECTIONS) {
+        pointConnectors.pop();
+      }
+
+      for (const connector of pointConnectors) {
+        if (connector.drawn) {
+          continue;
+        }
+        connector.drawn = true;
+        const {x1, x2, y1, y2, color} = connector;
+        this.canvas.drawLine(x1, y1, x2, y2, lineWidth, color);
       }
     }
   }
