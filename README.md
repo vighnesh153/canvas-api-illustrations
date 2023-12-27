@@ -1,6 +1,6 @@
 # Canvas-API Illustrations
 
-Visit [graphics.vighnesh153.com](https://graphics.vighnesh153.com)
+Visit [vighnesh153.dev/projects/graphics](https://vighnesh153.dev/projects/graphics)
 
 ### Commands
 * Generate a component
